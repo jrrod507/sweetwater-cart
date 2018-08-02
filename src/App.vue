@@ -5,9 +5,8 @@
     <ul>
       <li v-for="product in products">
         <div class="product-container">
-          <span>{{ product.productName }}</span>
-          <hr>
-          <span>{{ product.price }}</span>
+          <div><span>Name: </span>{{ product.productName }}</div>
+          <div><span>Price: </span>{{ product.price }}</div>
         </div>
       </li>
     </ul>
@@ -44,6 +43,12 @@ export default {
 
 .product-container {
   border: 1px solid black;
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.product-container span {
+  font-weight: bold;
 }
 
 h1, h2 {
@@ -56,7 +61,7 @@ ul {
 }
 
 li {
-  display: inline-block;
+  display: block;
   margin: 0 10px;
 }
 
