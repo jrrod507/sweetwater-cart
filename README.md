@@ -1,4 +1,4 @@
-# sweetwater-cart
+# vuejs-cart
 
 > A Vue.js project
 
